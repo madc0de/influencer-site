@@ -1,0 +1,160 @@
+/* Setup Variables */
+:root {
+  /* Color */
+  --color-primary: #e02c6d;
+  --color-accent: #0a0826;
+  --color-body: #3a3a3a;
+  --color-product: #18191f;
+  --color-product-body: #787885;
+  --color-star: #fb8200;
+
+  /* Fonts */
+  --font-primary: "Poppins", sans-serif;
+  --font-accent: "Inter", sans-serif;
+
+  /* Font Size */
+  --header-size: 2.2rem;
+  --subheader-size: 1.8rem;
+  --sub-title-size: 1.5rem;
+  --button-font-size: 1rem;
+  --body-font-size: 0.896rem;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-body);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+header {
+  padding: 2rem 1rem 0;
+}
+
+main {
+  max-width: 70em;
+}
+
+section {
+  padding: 2rem;
+}
+
+/* Utility Classes */
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.content-space-between {
+  justify-content: space-between;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semi {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.bg-circle {
+  background: url(../img/circle-bg.svg) no-repeat center/contain;
+}
+
+.cta {
+  font-size: 1rem;
+  padding: 0.7rem 1.2rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cta > span {
+  font-size: 1.2rem;
+  margin-left: 0.2rem;
+}
+
+.btn {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.rnd {
+  border-radius: 4rem;
+}
+
+/* Special CSS */
+.brand {
+  font-size: 1.2rem;
+}
+
+.hero {
+  flex-direction: column;
+}
+
+.hero-title {
+  text-align: center;
+}
+
+.hero-desc {
+  font-size: 0.9rem;
+}
+
+.brands {
+  text-align: center;
+}
+
+.brand-item {
+  flex: 1 0 calc(25% - 0.5rem);
+  padding: 0.5rem;
+}
+
+.brand-item img {
+  width: 80%;
+}
