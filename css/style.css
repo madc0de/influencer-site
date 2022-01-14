@@ -104,36 +104,46 @@ section {
   font-weight: 700;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.brand {
+  font-size: 1.2rem;
+}
+
 .bg-circle {
   background: url(../img/circle-bg.svg) no-repeat center/contain;
 }
 
 .cta {
   font-size: 1rem;
-  padding: 0.7rem 1.2rem;
   display: inline-flex;
   align-items: center;
+  color: var(--color-primary);
+}
+
+.cta-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .cta > span {
-  font-size: 1.2rem;
-  margin-left: 0.2rem;
+  font-size: 1.1rem;
+  margin-left: 0.1rem;
 }
 
 .btn {
   background: var(--color-primary);
   color: #fff;
+  padding: 0.7rem 1.2rem;
 }
 
 .rnd {
   border-radius: 4rem;
 }
 
-/* Special CSS */
-.brand {
-  font-size: 1.2rem;
-}
-
+/* Hero Section */
 .hero {
   flex-direction: column;
 }
@@ -146,6 +156,7 @@ section {
   font-size: 0.9rem;
 }
 
+/* Brands Section */
 .brands {
   text-align: center;
 }
@@ -157,4 +168,50 @@ section {
 
 .brand-item img {
   width: 80%;
+}
+
+/* Product Section */
+.product {
+  flex-direction: column;
+}
+
+.product-title {
+  font-size: 1.2rem;
+}
+
+/* Card Section */
+.card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0.1rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.card-desc * {
+  margin-bottom: 0.1rem;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  color: var(--color-accent);
+}
+
+.price {
+  font-family: var(--font-accent);
+  color: #000;
+}
+
+.info p {
+  font-family: var(--font-accent);
+  font-size: 0.8rem;
+  color: #787885;
+}
+
+.review span {
+  color: var(--color-star);
+  font-size: 0.8rem;
+}
+
+span.review-text {
+  color: var(--color-body);
 }
