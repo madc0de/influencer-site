@@ -361,6 +361,20 @@ footer div:last-child {
   .brand-item img {
     width: 80px;
   }
+
+  .brands::before,
+  .brands::after {
+    content: "";
+    display: block;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #fff, rgba(0, 0, 0, 0.1), #fff);
+  }
+  .brands::before {
+    margin-bottom: 0.5rem;
+  }
+  .brands::after {
+    margin-top: 0.5rem;
+  }
 }
 
 @media (min-width: 62em) {
