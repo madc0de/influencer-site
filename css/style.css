@@ -7,6 +7,7 @@
   --color-product: #18191f;
   --color-product-body: #787885;
   --color-star: #fb8200;
+  --color-social: #22213c;
 
   /* Fonts */
   --font-primary: "Poppins", sans-serif;
@@ -36,6 +37,7 @@ html {
 body {
   font-family: var(--font-primary);
   color: var(--color-body);
+  background-color: #fff;
 }
 
 h1,
@@ -60,16 +62,24 @@ ul {
   list-style: none;
 }
 
-header {
-  padding: 2rem 1rem 0;
+main {
+  margin: 0 auto;
+  max-width: 90em;
 }
 
-main {
-  max-width: 70em;
+header {
+  padding: 2rem 1.5rem 0;
 }
 
 section {
   padding: 2rem;
+}
+
+footer {
+  font-family: var(--font-accent);
+  padding: 2rem;
+  color: #fff;
+  background: var(--color-accent);
 }
 
 /* Utility Classes */
@@ -90,6 +100,26 @@ section {
 
 .content-space-between {
   justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  margin-right: 1rem;
+}
+
+.links {
+  font-weight: 600;
+  color: var(--color-body);
+  padding: 0.5rem;
 }
 
 .medium {
@@ -113,6 +143,8 @@ section {
 }
 
 .bg-circle {
+  display: flex;
+  justify-content: center;
   background: url(../img/circle-bg.svg) no-repeat center/contain;
 }
 
@@ -214,4 +246,99 @@ section {
 
 span.review-text {
   color: var(--color-body);
+}
+
+/* Footer Styles */
+footer div,
+footer p {
+  margin-bottom: 0.6rem;
+}
+
+footer div:last-child {
+  margin: 1rem 0 0;
+}
+
+.social span {
+  font-size: 1.2rem;
+  color: #fff;
+  background: var(--color-social);
+}
+
+@media (min-width: 36em) {
+  header {
+    padding: 2rem 3rem 0;
+  }
+
+  .brand {
+    font-size: 1.5rem;
+  }
+
+  .product {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    width: 300px;
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .hero {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col {
+    margin-bottom: 1rem;
+    text-align: left;
+    flex-basis: 100%;
+  }
+
+  .col-right {
+    order: 2;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .product-title {
+    font-size: 1.6rem;
+  }
+
+  .brand {
+    font-size: 1.8rem;
+  }
+
+  .brand-items {
+    flex-wrap: nowrap;
+  }
+
+  .brand-item {
+    flex: 100%;
+    padding: 0;
+  }
+
+  .brand-item img {
+    width: 80px;
+  }
+}
+
+@media (min-width: 62em) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  [class^="icon-"],
+  [class*=" icon-"] {
+    font-size: 2rem;
+  }
+
+  .ham-menu {
+    display: none;
+  }
 }
