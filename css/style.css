@@ -326,6 +326,7 @@ footer div:last-child {
   }
 
   .col {
+    padding: 0.8rem;
     margin-bottom: 1rem;
     text-align: left;
     flex-basis: 100%;
