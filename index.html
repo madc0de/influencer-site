@@ -18,7 +18,9 @@
   <header class="flex content-space-between">
     <!-- We all just good old ham, don't we? -->
     <div class="ham-menu">
-      <span class="icon-menu"></span>
+      <label for="toggle">
+        <span class="icon-menu"></span>
+      </label>
     </div>
     <!-- The Branding,da -->
     <div class="brand bold">
@@ -26,6 +28,7 @@
     </div>
     <!-- Div For Menu & Cart Icon -->
     <div class="menu">
+      <input type="checkbox" autocomplete="off" id="toggle">
       <ul class="menu-items">
         <li class="menu-item"><a href="#home" class="links">Home</a></li>
         <li class="menu-item"><a href="#products" class="links">Products</a></li>
@@ -33,6 +36,9 @@
         <li class="menu-item"><a href="#signup" class="links">Sign Up</a></li>
         <li class="menu-item"><span class="icon-search links"></span></li>
       </ul>
+      <label for="toggle" class="close">
+        <img src="img/close.svg" alt="X">
+      </label>
       <span class="icon-cart"></span>
     </div>
   </header>
